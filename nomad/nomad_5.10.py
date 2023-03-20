@@ -4,7 +4,8 @@ from requests import get
 from bs4 import BeautifulSoup
 
 base_url = "https://weworkremotely.com/remote-jobs/search?term=" # 바뀌지 않는 url
-search_term = "python" # 내가 검색어 를 뭘로 치느냐 에 따라 바뀌는 단어
+search_term = "java"
+# 내가 검색어 를 뭘로 치느냐 에 따라 바뀌는 단어
 
 response = get(f"{base_url}{search_term}")
 if response.status_code != 200:
